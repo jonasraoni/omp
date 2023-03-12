@@ -34,6 +34,8 @@ class PublishForm extends FormComponent
     /** @var \Context */
     public $submissionContext;
 
+    public $successMessage;
+
     /**
      * Constructor
      *

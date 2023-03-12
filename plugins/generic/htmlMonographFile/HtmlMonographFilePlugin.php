@@ -85,6 +85,7 @@ class HtmlMonographFilePlugin extends \PKP\plugins\GenericPlugin
         $inline = & $params[4];
         $request = Application::get()->getRequest();
 
+        $filePublication = null;
         $mimetype = $submissionFile->getData('mimetype');
         if ($submissionFile && $mimetype == 'text/html') {
             foreach ($submission->getData('publications') as $publication) {
@@ -240,7 +241,7 @@ class HtmlMonographFilePlugin extends \PKP\plugins\GenericPlugin
             switch (strtolower_codesafe($urlParts[0])) {
                 case 'press':
                     $url = $request->url(
-                        $urlParts[1] ?? $request->getRequestedContextPath($request),
+                        $urlParts[1] ?? $request->getRouter()->getRequestedContextPath($request),
                         null,
                         null,
                         null,

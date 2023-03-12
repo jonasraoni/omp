@@ -22,6 +22,8 @@ class Collector extends \PKP\submission\Collector
 {
     public const ORDERBY_SERIES_POSITION = 'seriesPosition';
 
+    public $columns;
+
     /** @var array|null */
     public $seriesIds = null;
 

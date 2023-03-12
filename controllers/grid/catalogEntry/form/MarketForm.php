@@ -29,6 +29,8 @@ class MarketForm extends Form
     /** @var Market Market the entry being edited */
     public $_market;
 
+    public $_publication;
+
     /**
      * Constructor.
      */

@@ -28,6 +28,8 @@ class SalesRightsForm extends Form
     /** @var SalesRights the entry being edited */
     public $_salesRights;
 
+    public $_publication;
+
     /**
      * Constructor.
      */

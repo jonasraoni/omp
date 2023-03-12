@@ -29,8 +29,8 @@ class PdfJsViewerPlugin extends GenericPlugin
     {
         if (parent::register($category, $path, $mainContextId)) {
             if ($this->getEnabled($mainContextId)) {
-                Hook::add('CatalogBookHandler::view', [$this, 'viewCallback'], HOOK_SEQUENCE_LATE);
-                Hook::add('CatalogBookHandler::download', [$this, 'downloadCallback'], HOOK_SEQUENCE_LATE);
+                Hook::add('CatalogBookHandler::view', [$this, 'viewCallback'], Hook::SEQUENCE_LATE);
+                Hook::add('CatalogBookHandler::download', [$this, 'downloadCallback'], Hook::SEQUENCE_LATE);
             }
             return true;
         }
@@ -78,6 +78,7 @@ class PdfJsViewerPlugin extends GenericPlugin
         $submission = & $args[1];
         $publicationFormat = & $args[2];
         $submissionFile = & $args[3];
+        $filePublication = null;
 
         if ($submissionFile->getData('mimetype') == 'application/pdf') {
             foreach ($submission->getData('publications') as $publication) {

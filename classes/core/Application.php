@@ -24,7 +24,6 @@ use APP\publicationFormat\PublicationFormatDAO;
 use PKP\core\PKPApplication;
 use PKP\db\DAORegistry;
 use PKP\facades\Locale;
-use PKP\submission\RepresentationDAOInterface;
 
 class Application extends PKPApplication
 {
@@ -178,7 +177,7 @@ class Application extends PKPApplication
      *
      * @return PublicationFormatDAO|RepresentationDAOInterface
      */
-    public static function getRepresentationDAO(): RepresentationDAOInterface
+    public static function getRepresentationDAO(): PublicationFormatDAO
     {
         /** @var PublicationFormatDAO|RepresentationDAOInterface */
         $dao = DAORegistry::getDAO('PublicationFormatDAO');

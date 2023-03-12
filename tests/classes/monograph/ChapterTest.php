@@ -23,6 +23,8 @@ use PKP\tests\PKPTestCase;
 
 class ChapterTest extends PKPTestCase
 {
+    public $chapter;
+
     /**
      * @see PKPTestCase::setUp()
      */

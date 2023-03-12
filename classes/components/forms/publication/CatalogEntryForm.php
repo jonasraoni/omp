@@ -32,6 +32,8 @@ class CatalogEntryForm extends FormComponent
     /** @copydoc FormComponent::$method */
     public $method = 'PUT';
 
+    public $successMessage;
+
     /**
      * Constructor
      *
