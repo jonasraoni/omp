@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file classes/decision/Repository.php
  *
@@ -131,7 +132,7 @@ class Repository extends \PKP\decision\Repository
     public function getDecisionTypesMadeByRecommendingUsers(int $stageId): array
     {
         $recommendatorsAvailableDecisions = [];
-        switch($stageId) {
+        switch ($stageId) {
             case WORKFLOW_STAGE_ID_SUBMISSION:
                 $recommendatorsAvailableDecisions = [
                     new SendInternalReview()

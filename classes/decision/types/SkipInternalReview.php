@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file classes/decision/types/SkipInternalReview.php
  *

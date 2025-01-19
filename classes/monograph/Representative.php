@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file classes/monograph/Representative.php
  *

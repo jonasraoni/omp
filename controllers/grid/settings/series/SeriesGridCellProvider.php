@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file controllers/grid/settings/series/SeriesGridCellProvider.php
  *

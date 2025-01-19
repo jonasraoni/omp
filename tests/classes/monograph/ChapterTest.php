@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file tests/classes/monograph/ChapterTest.php
  *

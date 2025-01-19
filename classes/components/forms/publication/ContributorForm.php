@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file classes/components/forms/publication/ContributorForm.php
  *

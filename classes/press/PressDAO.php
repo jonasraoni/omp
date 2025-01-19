@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file classes/press/PressDAO.php
  *
